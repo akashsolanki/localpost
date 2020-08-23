@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+   <a class="navbar-brand" href="#">
+    <img src="assets/img/local.png" width="150" height="70" alt="" loading="lazy">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a [routerLink]="['/']" style="color:grey;" class="nav-link" >Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+     
+      <li class="nav-item ml-1">
+        <a [routerLink]="['/signup']" style="color:grey; font-weight:bold;background-color: transparent; padding: 10px 20px; border-radius: 35px;" type="button" class="nav-link btn btn-info two" href="#" tabindex="-1" aria-disabled="true">Signup</a>
+      </li>
+    </ul>
+  <button style="padding: 10px 30px; border-radius: 35px;" class="btn btn-danger three">COVID-19 TRACKER</button>
+  </div>
+</nav>
+
+
+<div style="margin-top: 8%;" class="container text-center">
+    <form class="form-signin">
+  <img class="mb-4" src="assets/img/logo.png" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+ 
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+</form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
