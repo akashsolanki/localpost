@@ -10,7 +10,7 @@ import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { SignupserviceService } from './component/signup/signupservice.service';
 import { HttpClientModule} from '@angular/common/http';
-import {ReactiveFormsModule } from '@angular/forms';
+import {ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { from } from 'rxjs';
 
 
@@ -22,15 +22,15 @@ import { from } from 'rxjs';
     FooterComponent,
     LoginComponent,
     SignupComponent,
-  
-    
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
-    
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [SignupserviceService],
   bootstrap: [AppComponent]
